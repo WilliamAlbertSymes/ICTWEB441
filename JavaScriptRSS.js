@@ -1,5 +1,6 @@
     <script>
         
+      //William Symes 09135451@stuedents.sunitafe.edu.au version 1 
         function changePageTitle() { // changing the Page title from 'Webpage' to "Change Page Title"
             var newPageTitle = 'The Title has changed';
             document.querySelector('title').textContent = newPageTitle;
@@ -22,12 +23,12 @@
                 const items = xmlDoc.querySelectorAll('item');// select all item and load into list 
               
                 items.forEach(item => {
-                                                var title = item.querySelector('title').textContent;
-                                                document.getElementById("title").innerHTML = title;
-                                                var link = item.querySelector('link').textContent;
-                                                //document.getElementById("link").innerHTML = link;     
-                                                document.getElementById("description").innerHTML = description;                          
-                                                var description = item.querySelector('description').textContent;
+                                                var title = item.querySelector('title').textContent;// pick the content of the title and put it in the variable
+                                                document.getElementById("title").innerHTML = title;// use the variable to change the html element 
+                                                var link = item.querySelector('link').textContent;// pick the content of the link and put it in the variable
+                                                //document.getElementById("link").innerHTML = link; // use the variable to change the html element    
+                                                document.getElementById("description").innerHTML = description; // pick the content of the decription and put it in the variable                          
+                                                var description = item.querySelector('description').textContent; // use the variable to change the inner html element
                                                 console.log(description);
                                                 
                 
